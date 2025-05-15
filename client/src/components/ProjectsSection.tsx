@@ -4,10 +4,10 @@ import { ExternalLink, Github, PlusCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/lib/animation";
-import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { useSimpleAnimation } from "@/hooks/use-simple-animation";
 
 export function ProjectsSection() {
-  const { controls, ref } = useScrollAnimation({ threshold: 0.1 });
+  const { isVisible, ref } = useSimpleAnimation({ threshold: 0.1 });
   
   return (
     <section
@@ -34,7 +34,7 @@ export function ProjectsSection() {
           ref={ref}
           variants={staggerContainer}
           initial="hidden"
-          animate={controls}
+          animate={isVisible ? "visible" : "hidden"}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {projects.map((project, index) => (

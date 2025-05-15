@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
-import { fadeInUp, fadeInLeft, fadeInRight, pulse } from "@/lib/animation";
-import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { fadeInUp, fadeInRight, pulse } from "@/lib/animation";
+import { useSimpleAnimation } from "@/hooks/use-simple-animation";
 import { cn } from "@/lib/utils";
 
 export function HeroSection() {
-  const { controls: textControls, ref: textRef } = useScrollAnimation();
-  const { controls: imageControls, ref: imageRef } = useScrollAnimation({ threshold: 0.2 });
+  const { ref: textRef, isVisible: textVisible } = useSimpleAnimation();
+  const { ref: imageRef, isVisible: imageVisible } = useSimpleAnimation({ threshold: 0.2 });
   
   const handleScrollDown = () => {
     const aboutSection = document.getElementById('about');
@@ -64,7 +64,7 @@ export function HeroSection() {
               visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
             }}
             initial="hidden"
-            animate={textControls}
+            animate={textVisible ? "visible" : "hidden"}
             className="md:w-1/2"
           >
             <motion.div variants={fadeInUp}>
@@ -129,7 +129,7 @@ export function HeroSection() {
             ref={imageRef}
             variants={fadeInRight}
             initial="hidden"
-            animate={imageControls}
+            animate={imageVisible ? "visible" : "hidden"}
             className="md:w-1/2 flex justify-center"
           >
             <motion.div 
