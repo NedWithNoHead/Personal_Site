@@ -54,7 +54,7 @@ export function HeroSection() {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center animate-slide-up">
-            <div className="rounded-2xl overflow-hidden shadow-xl w-64 md:w-80 lg:w-96 border-4 border-card">
+            <div className="rounded-2xl overflow-hidden shadow-xl w-64 md:w-80 lg:w-96 border border-primary/20 hover:border-primary/40 transition-all duration-300">
               <img
                 src="/attached_assets/slack_ov.jpg"
                 alt="Tin Le Professional Portrait"

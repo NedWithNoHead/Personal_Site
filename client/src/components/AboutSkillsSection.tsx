@@ -21,7 +21,7 @@ export function AboutSkillsSection() {
             <h2 className="text-3xl font-bold text-foreground mb-8">
               About Me
             </h2>
-            <Card className="h-full animate-fade-in">
+            <Card className="h-full shadow-md border border-primary/10 hover:border-primary/30 transition-all duration-300">
               <CardContent className="pt-6">
                 <p className="text-muted-foreground mb-4">
                   I thrive at the intersection of business and technology, bringing a unique 
@@ -51,12 +51,12 @@ export function AboutSkillsSection() {
             <h2 className="text-3xl font-bold text-foreground mb-8">
               Skills & Expertise
             </h2>
-            <Card className="h-full">
+            <Card className="h-full shadow-md border border-primary/10 hover:border-primary/30 transition-all duration-300">
               <CardContent className="pt-6">
                 <Accordion type="single" collapsible defaultValue="data">
                   {skillCategories.map((category) => (
                     <AccordionItem value={category.id} key={category.id}>
-                      <AccordionTrigger className="text-lg md:text-xl font-semibold">
+                      <AccordionTrigger className="text-lg md:text-xl font-semibold hover:text-primary">
                         {category.title}
                       </AccordionTrigger>
                       <AccordionContent>

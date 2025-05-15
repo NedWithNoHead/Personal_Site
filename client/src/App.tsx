@@ -7,28 +7,10 @@ import { TimelineSection } from "./components/TimelineSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
-import { useEffect, useState } from "react";
+import { useActiveSidebar } from "./hooks/use-active-sidebar";
 
 function App() {
-  const [activeSection, setActiveSection] = useState("home");
-
-  // Function to check which section is currently in view
-  const checkScroll = () => {
-    const sections = ["home", "about", "timeline", "projects", "contact"];
-    for (const section of [...sections].reverse()) {
-      const el = document.getElementById(section);
-      if (el && window.scrollY >= el.offsetTop - 100) {
-        setActiveSection(section);
-        break;
-      }
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", checkScroll);
-    checkScroll(); // Check initially
-    return () => window.removeEventListener("scroll", checkScroll);
-  }, []);
+  const activeSection = useActiveSidebar();
 
   return (
     <TooltipProvider>

@@ -18,7 +18,7 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <Card
               key={`project-${index}`}
-              className="overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full group transform hover:-translate-y-1"
+              className="overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full group transform hover:-translate-y-1 border border-primary/10 hover:border-primary/30"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -47,9 +47,9 @@ export function ProjectsSection() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:text-primary/80 transition-colors inline-flex items-center"
+                      className="px-3 py-1.5 rounded-md bg-primary/10 text-primary hover:bg-primary/20 transition-colors inline-flex items-center text-sm"
                     >
-                      <ExternalLink className="h-4 w-4 mr-1" />
+                      <ExternalLink className="h-4 w-4 mr-1.5" />
                       <span>Live Demo</span>
                     </a>
                   )}
@@ -57,9 +57,9 @@ export function ProjectsSection() {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors inline-flex items-center"
+                    className="px-3 py-1.5 rounded-md bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 transition-colors inline-flex items-center text-sm"
                   >
-                    <Github className="h-4 w-4 mr-1" />
+                    <Github className="h-4 w-4 mr-1.5" />
                     <span>GitHub</span>
                   </a>
                 </div>
