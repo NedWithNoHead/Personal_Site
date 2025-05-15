@@ -10,25 +10,7 @@ import {
 import { motion } from "framer-motion";
 import { useSimpleAnimation } from "@/hooks/use-simple-animation";
 
-// Custom skill progress component
-function SkillProgress({ value, label }: { value: number; label: string }) {
-  return (
-    <div className="mb-4">
-      <div className="flex justify-between mb-1">
-        <span className="text-sm font-medium text-foreground">{label}</span>
-        <span className="text-sm font-medium text-primary">{value}%</span>
-      </div>
-      <div className="w-full bg-muted rounded-full h-2.5">
-        <motion.div 
-          className="bg-primary h-2.5 rounded-full"
-          initial={{ width: 0 }}
-          animate={{ width: `${value}%` }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        />
-      </div>
-    </div>
-  );
-}
+
 
 export function AboutSkillsSection() {
   const { ref, isVisible } = useSimpleAnimation({ threshold: 0.1 });
@@ -40,20 +22,7 @@ export function AboutSkillsSection() {
       className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30 transition-colors"
     >
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto text-center mb-16"
-        >
-          <span className="inline-block text-primary font-medium mb-3 border border-primary/20 bg-primary/10 px-3 py-1 rounded-full">About</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            About Me & My Skills
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            A brief introduction about who I am and the skills I've acquired throughout my career.
-          </p>
-        </motion.div>
+
 
         <div className="flex flex-col lg:flex-row gap-10">
           {/* About Section */}
@@ -179,14 +148,7 @@ export function AboutSkillsSection() {
                   ))}
                 </Accordion>
 
-                {/* Core competencies with progress bars */}
-                <div className="mt-8 pt-6 border-t border-border">
-                  <h3 className="text-lg font-semibold mb-4 text-foreground">Core Competencies</h3>
-                  <SkillProgress value={90} label="Data Engineering & Analytics" />
-                  <SkillProgress value={85} label="Financial Analysis" />
-                  <SkillProgress value={80} label="Business Process Optimization" />
-                  <SkillProgress value={88} label="Cross-functional Communication" />
-                </div>
+
               </CardContent>
             </Card>
           </motion.div>

@@ -14,7 +14,7 @@ export const projects: Project[] = [
     technologies: ["React", "ThreeJS", "NASA API"],
     liveLink: "https://space-explorer.cloud/",
     githubLink: "https://github.com/NedWithNoHead/SpaceExplorer",
-    imageUrl: "/attached_assets/slack_ov.jpg"
+    imageUrl: "/space-explorer.svg"
   },
   {
     title: "HomeDecide",
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     technologies: ["Python", "Streamlit", "Pandas", "Plotly"],
     liveLink: "https://nedwithnohead-homedecide--8501.prod1a.defang.dev/",
     githubLink: "https://github.com/NedWithNoHead/HomeDecide",
-    imageUrl: "/attached_assets/slack_ov.jpg"
+    imageUrl: "/homedecide-tech.svg"
   },
   {
     title: "Runify - Event Processing System",

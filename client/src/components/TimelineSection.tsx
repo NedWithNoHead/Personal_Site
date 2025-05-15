@@ -31,7 +31,7 @@ export function TimelineSection() {
           {/* Timeline Items */}
           <div className="space-y-12 relative">
             {/* Timeline connector */}
-            <div className="absolute top-0 bottom-0 left-1/2 md:left-24 w-1 bg-primary/20 -translate-x-1/2 rounded-full hidden md:block"></div>
+            <div className="absolute top-0 bottom-0 left-1/2 md:left-[95px] w-1 bg-primary/20 -translate-x-1/2 rounded-full hidden md:block"></div>
             
             {timelineItems.map((item, index) => (
               <motion.div 
@@ -50,7 +50,7 @@ export function TimelineSection() {
                   {/* Left Column - Time and Company */}
                   <div className="md:w-1/3 bg-gradient-to-br from-primary/5 to-transparent p-6 flex flex-col justify-between relative">
                     {/* Timeline dot */}
-                    <div className="absolute -left-3 top-8 w-6 h-6 rounded-full bg-primary/30 border-2 border-primary hidden md:flex items-center justify-center z-10">
+                    <div className="absolute left-0 md:left-[-12px] top-8 w-6 h-6 rounded-full bg-primary/30 border-2 border-primary hidden md:flex items-center justify-center z-10">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
                     </div>
                     <div>
