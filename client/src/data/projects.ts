@@ -22,21 +22,21 @@ export const projects: Project[] = [
     technologies: ["Python", "Streamlit", "Pandas", "Plotly"],
     liveLink: "https://nedwithnohead-homedecide--8501.prod1a.defang.dev/",
     githubLink: "https://github.com/NedWithNoHead/HomeDecide",
-    imageUrl: "/attached_assets/homedecide.jpg"
+    imageUrl: "/attached_assets/homedecide_new.jpg"
   },
   {
     title: "Runify - Event Processing System",
     description: "High-performance microservices architecture handling 1000+ concurrent events through asynchronous processing, demonstrating enterprise-level system design principles.",
     technologies: ["Python", "Kafka", "Docker", "Azure VM"],
     githubLink: "https://github.com/NedWithNoHead/Runify",
-    imageUrl: "/attached_assets/runify.jpg"
+    imageUrl: "/attached_assets/runify_new.jpg"
   },
   {
     title: "AWS Multi-Region Deployment",
     description: "Cloud-native application with infrastructure as code implementation, featuring high availability architecture and automated scaling across multiple AWS regions.",
     technologies: ["Terraform", "AWS", "CloudWatch", "MySQL"],
     githubLink: "https://github.com/NedWithNoHead/chat_service_provisioning",
-    imageUrl: "/attached_assets/aws_project.png"
+    imageUrl: "/attached_assets/aws_new.jpg"
   },
   {
     title: "Enterprise Media Server",
