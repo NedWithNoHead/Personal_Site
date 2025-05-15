@@ -29,20 +29,20 @@ export const projects: Project[] = [
     description: "High-performance microservices architecture handling 1000+ concurrent events through asynchronous processing, demonstrating enterprise-level system design principles.",
     technologies: ["Python", "Kafka", "Docker", "Azure VM"],
     githubLink: "https://github.com/NedWithNoHead/Runify",
-    imageUrl: "/attached_assets/runify.jpg"
+    imageUrl: "/runify-tech.svg"
   },
   {
     title: "AWS Multi-Region Deployment",
     description: "Cloud-native application with infrastructure as code implementation, featuring high availability architecture and automated scaling across multiple AWS regions.",
     technologies: ["Terraform", "AWS", "CloudWatch", "MySQL"],
     githubLink: "https://github.com/NedWithNoHead/chat_service_provisioning",
-    imageUrl: "/attached_assets/aws_project.png"
+    imageUrl: "/aws-architecture.svg"
   },
   {
     title: "Enterprise Media Server",
     description: "Production-grade home lab implementation demonstrating enterprise architecture principles with containerization, redundancy, and monitoring for 10+ concurrent users.",
     technologies: ["Docker Compose", "RAID", "Linux", "Networking"],
     githubLink: "https://github.com/NedWithNoHead/DockerStreamingService",
-    imageUrl: "/attached_assets/enterpise_media_server.jpg"
+    imageUrl: "/media-server.svg"
   }
 ];

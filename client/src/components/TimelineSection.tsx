@@ -50,9 +50,7 @@ export function TimelineSection() {
                   {/* Left Column - Time and Company */}
                   <div className="md:w-1/3 bg-gradient-to-br from-primary/5 to-transparent p-6 flex flex-col justify-between relative">
                     {/* Timeline dot */}
-                    <div className="absolute left-0 md:left-[-12px] top-8 w-6 h-6 rounded-full bg-primary/30 border-2 border-primary hidden md:flex items-center justify-center z-10">
-                      <div className="w-2 h-2 rounded-full bg-primary"></div>
-                    </div>
+                    <div className="absolute left-0 md:left-[-12px] top-8 w-6 h-6 rounded-full bg-primary/20 border border-primary/40 hidden md:block z-10"></div>
                     <div>
                       <div className="flex items-center mb-3">
                         <Calendar className="h-4 w-4 mr-2 text-primary" />
