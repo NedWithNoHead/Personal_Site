@@ -115,7 +115,7 @@ export function ContactSection() {
                     <ContactItem 
                       icon={<Linkedin className="h-6 w-6" />}
                       label="Connect on LinkedIn"
-                      href="https://linkedin.com/"
+                      href="https://www.linkedin.com/in/tintrungle/"
                       color="bg-[#0077B5]"
                       hoverColor="#0069a2"
                     />
