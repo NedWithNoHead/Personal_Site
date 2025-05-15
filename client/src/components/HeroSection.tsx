@@ -102,7 +102,7 @@ export function HeroSection() {
             >
               <Button variant="outline" asChild className="border-primary/20 hover:border-primary/40 group">
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/tintrungle/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 transition-all"
