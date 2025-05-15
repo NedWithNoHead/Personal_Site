@@ -2,8 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
-import { AboutSection } from "./components/AboutSection";
-import { SkillsSection } from "./components/SkillsSection";
+import { AboutSkillsSection } from "./components/AboutSkillsSection";
 import { TimelineSection } from "./components/TimelineSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { ContactSection } from "./components/ContactSection";
@@ -15,7 +14,7 @@ function App() {
 
   // Function to check which section is currently in view
   const checkScroll = () => {
-    const sections = ["home", "about", "skills", "timeline", "projects", "contact"];
+    const sections = ["home", "about", "timeline", "projects", "contact"];
     for (const section of [...sections].reverse()) {
       const el = document.getElementById(section);
       if (el && window.scrollY >= el.offsetTop - 100) {
@@ -37,8 +36,7 @@ function App() {
       <div className="font-sans antialiased bg-background text-foreground transition-colors min-h-screen">
         <Navbar activeSection={activeSection} />
         <HeroSection />
-        <AboutSection />
-        <SkillsSection />
+        <AboutSkillsSection />
         <TimelineSection />
         <ProjectsSection />
         <ContactSection />

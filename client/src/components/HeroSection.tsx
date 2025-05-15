@@ -58,7 +58,7 @@ export function HeroSection() {
               <img
                 src="/attached_assets/slack_ov.jpg"
                 alt="Tin Le Professional Portrait"
-                className="w-full h-auto"
+                className="w-full h-auto object-cover"
               />
             </div>
           </div>

@@ -31,7 +31,6 @@ export function Navbar({ activeSection }: NavbarProps) {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "skills", label: "Skills" },
     { id: "timeline", label: "Timeline" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
@@ -50,8 +49,8 @@ export function Navbar({ activeSection }: NavbarProps) {
               variant="ghost"
               className={`${
                 activeSection === item.id
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-primary"
+                  ? "bg-primary/10 text-primary font-medium"
+                  : "text-muted-foreground hover:text-primary hover:bg-muted/50"
               }`}
               onClick={() => handleNavClick(item.id)}
             >

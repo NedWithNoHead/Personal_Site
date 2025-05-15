@@ -1,32 +1,32 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Check, ExternalLink } from "lucide-react";
+import { ExternalLink, Check } from "lucide-react";
 import { timelineItems } from "@/data/timeline";
 
 export function TimelineSection() {
   return (
     <section
       id="timeline"
-      className="py-16 md:py-24 bg-muted/30 transition-colors relative"
+      className="py-16 md:py-24 bg-background transition-colors"
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-foreground mb-12">
           Professional Journey
         </h2>
 
-        <div className="max-w-4xl mx-auto relative">
-          {/* Timeline Line */}
-          <div className="absolute left-16 md:left-[7.5rem] top-0 bottom-0 w-0.5 bg-primary/50 hidden md:block"></div>
-
+        <div className="max-w-5xl mx-auto">
           {/* Timeline Items */}
-          {timelineItems.map((item, index) => (
-            <div className="mb-12 last:mb-0" key={`timeline-${index}`}>
-              <div className="flex flex-col md:flex-row items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-full bg-background border-4 border-primary text-primary font-bold z-10 text-center flex-shrink-0 text-sm md:text-base">
-                  {item.year}
-                </div>
-                <Card className="w-full md:ml-4 animate-fade-in">
-                  <CardContent className="pt-6">
-                    <div className="mb-6">
+          <div className="space-y-12">
+            {timelineItems.map((item, index) => (
+              <div 
+                key={`timeline-${index}`}
+                className="relative bg-card rounded-lg shadow-md overflow-hidden border border-border hover:border-primary/50 transition-all duration-300"
+              >
+                <div className="flex flex-col md:flex-row">
+                  {/* Left Column - Time and Company */}
+                  <div className="md:w-1/3 bg-muted/20 p-6 flex flex-col justify-between">
+                    <div>
+                      <div className="text-lg md:text-xl font-bold text-primary mb-2">
+                        {item.year}
+                      </div>
                       <h3 className="text-xl font-semibold text-foreground mb-1">
                         {item.title}
                       </h3>
@@ -34,12 +34,27 @@ export function TimelineSection() {
                         <p className="text-muted-foreground mb-1">{item.subtitle}</p>
                       )}
                       {item.duration && (
-                        <p className="text-sm text-muted-foreground mb-3">{item.duration}</p>
+                        <p className="text-sm text-muted-foreground">{item.duration}</p>
                       )}
                     </div>
+                    
+                    {item.website && (
+                      <a
+                        href={item.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:text-primary/80 transition-colors inline-flex items-center mt-4 text-sm"
+                      >
+                        <span>Visit Website</span>
+                        <ExternalLink className="h-4 w-4 ml-1" />
+                      </a>
+                    )}
+                  </div>
 
+                  {/* Right Column - Content */}
+                  <div className="md:w-2/3 p-6">
                     {item.bulletPoints.length > 0 && (
-                      <ul className="space-y-2 mb-4">
+                      <ul className="space-y-3 mb-4">
                         {item.bulletPoints.map((point, i) => (
                           <li className="flex items-start" key={`point-${i}`}>
                             <Check className="h-5 w-5 mr-2 text-primary mt-0.5 flex-shrink-0" />
@@ -50,13 +65,13 @@ export function TimelineSection() {
                     )}
 
                     {item.roles && item.roles.length > 0 && (
-                      <div className="space-y-6">
+                      <div className="space-y-6 pt-4 border-t border-border">
                         {item.roles.map((role, i) => (
                           <div key={`role-${i}`} className="mb-6 last:mb-0">
-                            <h4 className="font-semibold text-primary mb-2">
+                            <h4 className="font-semibold text-primary mb-3">
                               {role.title}
                             </h4>
-                            <ul className="space-y-2">
+                            <ul className="space-y-3">
                               {role.bulletPoints.map((point, j) => (
                                 <li className="flex items-start" key={`role-point-${j}`}>
                                   <Check className="h-5 w-5 mr-2 text-primary mt-0.5 flex-shrink-0" />
@@ -68,23 +83,11 @@ export function TimelineSection() {
                         ))}
                       </div>
                     )}
-
-                    {item.website && (
-                      <a
-                        href={item.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:text-primary/80 transition-colors inline-flex items-center mt-4"
-                      >
-                        <span>Visit Website</span>
-                        <ExternalLink className="h-4 w-4 ml-1" />
-                      </a>
-                    )}
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
