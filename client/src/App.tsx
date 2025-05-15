@@ -43,6 +43,7 @@ function App() {
       <div className="font-sans antialiased bg-background text-foreground transition-colors min-h-screen">
         <Navbar activeSection={activeSection} />
         <FloatingNav />
+        <ThemeToggle />
         
         <main>
           <HeroSection />
