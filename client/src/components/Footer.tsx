@@ -41,7 +41,7 @@ export function Footer() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <motion.a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/tintrungle/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
