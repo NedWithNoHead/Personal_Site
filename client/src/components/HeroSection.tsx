@@ -139,7 +139,7 @@ export function HeroSection() {
             >
               <div className="rounded-xl overflow-hidden shadow-lg relative group">
                 <img
-                  src="/my_photo.jpg"
+                  src="/attached_assets/my_photo.jpg.jpg"
                   alt="Tin Le Professional Portrait"
                   className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                 />

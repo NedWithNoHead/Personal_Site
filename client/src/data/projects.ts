@@ -14,7 +14,7 @@ export const projects: Project[] = [
     technologies: ["React", "ThreeJS", "NASA API"],
     liveLink: "https://space-explorer.cloud/",
     githubLink: "https://github.com/NedWithNoHead/SpaceExplorer",
-    imageUrl: "/space-explorer.svg"
+    imageUrl: "/attached_assets/slack_ov.jpg"
   },
   {
     title: "HomeDecide",
@@ -22,27 +22,27 @@ export const projects: Project[] = [
     technologies: ["Python", "Streamlit", "Pandas", "Plotly"],
     liveLink: "https://nedwithnohead-homedecide--8501.prod1a.defang.dev/",
     githubLink: "https://github.com/NedWithNoHead/HomeDecide",
-    imageUrl: "/homedecide-tech.svg"
+    imageUrl: "/attached_assets/slack_ov.jpg"
   },
   {
     title: "Runify - Event Processing System",
     description: "High-performance microservices architecture handling 1000+ concurrent events through asynchronous processing, demonstrating enterprise-level system design principles.",
     technologies: ["Python", "Kafka", "Docker", "Azure VM"],
     githubLink: "https://github.com/NedWithNoHead/Runify",
-    imageUrl: "/runify-tech.svg"
+    imageUrl: "/attached_assets/runify.jpg"
   },
   {
     title: "AWS Multi-Region Deployment",
     description: "Cloud-native application with infrastructure as code implementation, featuring high availability architecture and automated scaling across multiple AWS regions.",
     technologies: ["Terraform", "AWS", "CloudWatch", "MySQL"],
     githubLink: "https://github.com/NedWithNoHead/chat_service_provisioning",
-    imageUrl: "/aws-architecture.svg"
+    imageUrl: "/attached_assets/aws_project.png"
   },
   {
     title: "Enterprise Media Server",
     description: "Production-grade home lab implementation demonstrating enterprise architecture principles with containerization, redundancy, and monitoring for 10+ concurrent users.",
     technologies: ["Docker Compose", "RAID", "Linux", "Networking"],
     githubLink: "https://github.com/NedWithNoHead/DockerStreamingService",
-    imageUrl: "/media-server.svg"
+    imageUrl: "/attached_assets/enterpise_media_server.jpg"
   }
 ];
