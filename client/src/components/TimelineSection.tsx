@@ -18,7 +18,7 @@ export function TimelineSection() {
             {timelineItems.map((item, index) => (
               <div 
                 key={`timeline-${index}`}
-                className="relative bg-card rounded-lg shadow-md overflow-hidden border border-border hover:border-primary/50 transition-all duration-300"
+                className="relative bg-card rounded-lg shadow-md overflow-hidden border border-primary/10 hover:border-primary/30 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
               >
                 <div className="flex flex-col md:flex-row">
                   {/* Left Column - Time and Company */}

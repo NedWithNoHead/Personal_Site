@@ -25,22 +25,22 @@ export function HeroSection() {
               technology work for people, not the other way around.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="flex items-center gap-2">
+              <Button className="flex items-center gap-2 bg-primary hover:bg-primary/90">
                 <FileText className="h-5 w-5" />
                 View Resume
               </Button>
-              <Button variant="outline" asChild>
+              <Button variant="outline" asChild className="border-primary/20 hover:border-primary/40">
                 <a
                   href="https://linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  <Linkedin className="h-5 w-5" />
+                  <Linkedin className="h-5 w-5 text-[#0077B5]" />
                   LinkedIn
                 </a>
               </Button>
-              <Button variant="outline" asChild>
+              <Button variant="outline" asChild className="border-primary/20 hover:border-primary/40">
                 <a
                   href="https://github.com/NedWithNoHead"
                   target="_blank"

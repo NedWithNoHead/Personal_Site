@@ -71,7 +71,7 @@ export function ContactSection() {
                   rows={4}
                 />
               </div>
-              <Button className="w-full" type="submit">
+              <Button className="w-full bg-primary hover:bg-primary/90" type="submit">
                 <Mail className="mr-2 h-4 w-4" /> Send Message
               </Button>
             </form>

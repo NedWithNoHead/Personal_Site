@@ -37,7 +37,7 @@ export function Navbar({ activeSection }: NavbarProps) {
   ];
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-200 ${isScrolled ? "bg-background shadow-md" : "bg-background/95"}`}>
+    <header className={`fixed w-full top-0 z-50 transition-all duration-200 ${isScrolled ? "bg-background shadow-md backdrop-blur-sm" : "bg-background/80 backdrop-blur-sm"}`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="text-xl font-bold text-primary">Tin Le</div>
 
