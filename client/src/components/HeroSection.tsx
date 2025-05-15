@@ -54,12 +54,13 @@ export function HeroSection() {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center animate-slide-up">
-            <div className="rounded-2xl overflow-hidden shadow-xl w-64 md:w-80 lg:w-96 border border-primary/20 hover:border-primary/40 transition-all duration-300">
+            <div className="rounded-2xl overflow-hidden shadow-xl w-64 md:w-80 lg:w-96 border border-primary/20 hover:border-primary/40 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl relative group">
               <img
                 src="/attached_assets/slack_ov.jpg"
                 alt="Tin Le Professional Portrait"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </div>
         </div>

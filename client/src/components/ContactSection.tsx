@@ -21,7 +21,7 @@ export function ContactSection() {
           </p>
         </div>
 
-        <Card className="max-w-2xl mx-auto">
+        <Card className="max-w-2xl mx-auto shadow-md border border-primary/10 hover:border-primary/30 transition-all duration-300">
           <CardContent className="pt-6">
             <div className="mb-8 flex justify-center space-x-6">
               <a
