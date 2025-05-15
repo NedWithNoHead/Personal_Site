@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FileText, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -25,10 +25,7 @@ export function HeroSection() {
               technology work for people, not the other way around.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="flex items-center gap-2 bg-primary hover:bg-primary/90">
-                <FileText className="h-5 w-5" />
-                View Resume
-              </Button>
+
               <Button variant="outline" asChild className="border-primary/20 hover:border-primary/40">
                 <a
                   href="https://linkedin.com/"
@@ -56,7 +53,7 @@ export function HeroSection() {
           <div className="md:w-1/2 flex justify-center animate-slide-up">
             <div className="rounded-2xl overflow-hidden shadow-xl w-64 md:w-80 lg:w-96 border border-primary/20 hover:border-primary/40 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl relative group">
               <img
-                src="/attached_assets/my_photo.jpg.jpg"
+                src="/my_photo.jpg"
                 alt="Tin Le Professional Portrait"
                 className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-105"
               />
