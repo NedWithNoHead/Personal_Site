@@ -23,12 +23,11 @@ export const timelineItems: TimelineItem[] = [
   {
     year: "2024",
     title: "BC Liquor Distribution Branch",
-    duration: "Jan 2024 - Aug 2024",
     website: "https://www.bcldb.com/",
     bulletPoints: [],
     roles: [
       {
-        title: "Project Analyst (Co-op)",
+        title: "Project Analyst",
         bulletPoints: [
           "Selected as top 15% of students for competitive placement",
           "Developed Power BI dashboards and Python automation solutions",
@@ -46,9 +45,8 @@ export const timelineItems: TimelineItem[] = [
     ]
   },
   {
-    year: "2017-22",
+    year: "2017-2022",
     title: "Fujinet Systems JSC",
-    duration: "Feb 2017 - Aug 2022",
     website: "https://fujinet.net/",
     bulletPoints: [],
     roles: [
