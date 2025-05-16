@@ -50,11 +50,15 @@ export function AboutSkillsSection() {
                   animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  I thrive at the intersection of business and technology, bringing a unique 
-                  perspective that combines financial acumen with technical expertise. As a 
-                  Computer Information Technology graduate with a strong foundation in Business 
-                  Administration, I've built a career translating complex business needs into 
-                  elegant technological solutions.
+                  I'm Tin, a tech enthusiast with a business mind and a problem-solver's heart. My journey began in business systems analysis, where I discovered my love for turning data into insights that actually make a difference.
+                </motion.p>
+                <motion.p 
+                  className="text-muted-foreground mb-4 leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  What drives me? Building bridges between business challenges and technical solutions. I get genuinely excited when I can translate a complex business need into clean code or when I can show stakeholders exactly what they need to see in a dashboard I've designed.
                 </motion.p>
                 <motion.p 
                   className="text-muted-foreground mb-4 leading-relaxed"
@@ -62,10 +66,15 @@ export function AboutSkillsSection() {
                   animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  My journey from financial analysis to data engineering has equipped me with 
-                  the rare ability to communicate effectively across departments, understand 
-                  stakeholder requirements at their core, and implement systems that drive 
-                  measurable business results.
+                  After working at the intersection of business and technology, I decided to deepen my technical skills through formal education in Computer Information Technology at BCIT. I've maintained a 94% GPA while building everything from microservices to media servers—and somehow became the default tech support for my entire extended family along the way.
+                </motion.p>
+                <motion.p 
+                  className="text-muted-foreground mb-4 leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                  Whether I'm optimizing database queries, containerizing applications, or automating what used to take someone hours to do manually, I find deep satisfaction in creating solutions that make work more efficient and data more meaningful.
                 </motion.p>
                 <motion.p 
                   className="text-muted-foreground leading-relaxed"
@@ -73,10 +82,8 @@ export function AboutSkillsSection() {
                   animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
                 >
-                  Whether optimizing database performance, automating financial processes, or 
-                  creating insightful dashboards that inform critical decisions, I'm committed 
-                  to delivering solutions that enhance operational efficiency and provide 
-                  meaningful business intelligence.
+                  When I'm not coding or analyzing data, you'll find me hiking BC trails or running popular routes like the seawall, planning my next custom PC build, or tinkering with my home server setup.
+                  Let's connect and create something impactful together.
                 </motion.p>
               </CardContent>
             </Card>
