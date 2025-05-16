@@ -13,7 +13,7 @@ export interface TimelineItem {
 
 export const timelineItems: TimelineItem[] = [
   {
-    year: "2024",
+    year: "2025",
     title: "BCIT Graduation",
     bulletPoints: [
       "Computer Information Technology Diploma (94% GPA)",
