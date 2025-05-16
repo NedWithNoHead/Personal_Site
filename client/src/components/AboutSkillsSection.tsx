@@ -56,25 +56,9 @@ export function AboutSkillsSection() {
                   className="text-muted-foreground mb-4 leading-relaxed"
                   initial={{ opacity: 0, y: 20 }}
                   animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                >
-                  What drives me? Building bridges between business challenges and technical solutions. I get genuinely excited when I can translate a complex business need into clean code or when I can show stakeholders exactly what they need to see in a dashboard I've designed.
-                </motion.p>
-                <motion.p 
-                  className="text-muted-foreground mb-4 leading-relaxed"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  After working at the intersection of business and technology, I decided to deepen my technical skills through formal education in Computer Information Technology at BCIT. I've maintained a 94% GPA while building everything from microservices to media servers—and somehow became the default tech support for my entire extended family along the way.
-                </motion.p>
-                <motion.p 
-                  className="text-muted-foreground mb-4 leading-relaxed"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={aboutVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                >
-                  Whether I'm optimizing database queries, containerizing applications, or automating what used to take someone hours to do manually, I find deep satisfaction in creating solutions that make work more efficient and data more meaningful.
+                  What drives me? Building bridges between business challenges and technical solutions. I get genuinely excited when I can translate a complex business need into clean code or when I can show stakeholders exactly what they need to see in a dashboard I've designed. With a background that spans both business and tech, I bring a unique perspective to every project—whether I'm optimizing databases, containerizing applications, or automating manual processes.
                 </motion.p>
                 <motion.p 
                   className="text-muted-foreground leading-relaxed"
