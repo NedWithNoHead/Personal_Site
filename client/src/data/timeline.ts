@@ -39,7 +39,7 @@ export const timelineItems: TimelineItem[] = [
   },
   {
     year: "2022",
-    title: "Career Transition to Technology",
+    title: "Back to School for Computer Science",
     bulletPoints: [
       "Enrolled in Computer Information Technology program at BCIT",
       "Began specializing in data systems and business technology solutions"
