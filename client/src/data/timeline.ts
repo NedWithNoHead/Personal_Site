@@ -23,13 +23,18 @@ export const timelineItems: TimelineItem[] = [
   {
     year: "2024",
     title: "BC Liquor Distribution Branch",
-    subtitle: "Project Analyst (Co-op)",
     duration: "Jan 2024 - Aug 2024",
     website: "https://www.bcldb.com/",
-    bulletPoints: [
-      "Selected as top 15% of students for competitive placement",
-      "Developed Power BI dashboards and Python automation solutions",
-      "Led data quality testing and validation framework implementation"
+    bulletPoints: [],
+    roles: [
+      {
+        title: "Project Analyst (Co-op)",
+        bulletPoints: [
+          "Selected as top 15% of students for competitive placement",
+          "Developed Power BI dashboards and Python automation solutions",
+          "Led data quality testing and validation framework implementation"
+        ]
+      }
     ]
   },
   {
