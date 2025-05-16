@@ -64,7 +64,7 @@ export function FloatingNav() {
   return (
     <motion.div 
       className={cn(
-        "fixed z-50 bottom-6 left-1/2 transform -translate-x-1/2",
+        "fixed z-50 bottom-6 left-0 right-0 mx-auto w-max",
         "px-1 py-1 rounded-full bg-background/80 backdrop-blur border border-primary/20",
         "shadow-lg transition-opacity duration-300",
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'

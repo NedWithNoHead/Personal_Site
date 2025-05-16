@@ -102,7 +102,7 @@ export function HeroSection() {
             >
               <Button variant="outline" asChild className="border-primary/20 hover:border-primary/40 group">
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/tintrungle/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 transition-all"
@@ -163,7 +163,7 @@ export function HeroSection() {
         
         {/* Scroll down indicator */}
         <motion.div 
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          className="absolute bottom-8 left-0 right-0 mx-auto w-max cursor-pointer hidden md:block"
           onClick={handleScrollDown}
           variants={pulse}
           initial="initial"
