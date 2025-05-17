@@ -89,11 +89,7 @@ export function HeroSection() {
               variants={fadeInUp}
               className="text-muted-foreground text-lg mb-8"
             >
-              I transform complex business challenges into elegant technical
-              solutions. With a background spanning financial analysis and
-              computer science, I specialize in translating business
-              requirements into data-driven insights that empower
-              decision-makers to act with confidence.
+             I empower decision-makers to act with confidence through data-driven insights. Transforming complex business challenges into elegant technical solutions, I bridge my background in financial analysis and computer science to effectively translate business requirements into actionable intelligence.
             </motion.p>
             
             <motion.div 
