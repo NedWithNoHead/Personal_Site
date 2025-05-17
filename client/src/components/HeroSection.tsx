@@ -89,7 +89,7 @@ export function HeroSection() {
               variants={fadeInUp}
               className="text-muted-foreground text-lg mb-8"
             >
-             I empower decision-makers to act with confidence through data-driven insights. Transforming complex business challenges into elegant technical solutions, I bridge my background in financial analysis and computer science to effectively translate business requirements into actionable intelligence.
+             I empower decision-makers to act with confidence through data-driven insights. Combining expertise in financial analysis and computer science, I craft elegant technical solutions to complex business challenges, effectively translating requirements into actionable intelligence.
             </motion.p>
             
             <motion.div 
