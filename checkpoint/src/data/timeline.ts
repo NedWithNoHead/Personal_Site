@@ -34,7 +34,8 @@ export const timelineItems: TimelineItem[] = [
   },
   {
     year: "2022",
-    title: "Career Transition to Technology",
+    title: "Started Computer Science Program at BCIT",
+    website: "https://www.bcit.ca/",
     bulletPoints: [
       "Enrolled in Computer Information Technology program at BCIT",
       "Began specializing in data systems and business technology solutions"
@@ -69,7 +70,7 @@ export const timelineItems: TimelineItem[] = [
   },
   {
     year: "2016",
-    title: "State University of New York at Buffalo",
+    title: "Graduated from State University of New York at Buffalo",
     website: "https://www.buffalo.edu/",
     bulletPoints: [
       "Bachelor of Science in Business Administration",
