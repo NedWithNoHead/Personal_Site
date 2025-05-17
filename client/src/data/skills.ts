@@ -9,11 +9,11 @@ export const skillCategories: SkillCategory[] = [
     id: "data",
     title: "Data Skills",
     skills: [
-      "Power BI, SQL Server, Tableau",
+      "Power BI, Tableau",
       "ETL Pipeline Development",
       "Statistical Analysis & Data Modeling",
       "Data Visualization & Dashboard Design",
-      "MySQL, Database Optimization",
+      "MySQL, SQL Server, Database Optimization",
       "Data Integrity & Validation"
     ]
   },
