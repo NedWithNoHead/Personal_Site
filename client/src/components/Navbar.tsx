@@ -31,7 +31,7 @@ export function Navbar({ activeSection }: NavbarProps) {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "timeline", label: "Timeline" },
+    { id: "timeline", label: "Professional Journey" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
