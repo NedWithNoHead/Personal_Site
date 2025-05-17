@@ -14,7 +14,7 @@ export interface TimelineItem {
 export const timelineItems: TimelineItem[] = [
   {
     year: "2025",
-    title: "BCIT Graduation",
+    title: "Graduated from BCIT Computer Science",
     bulletPoints: [
       "Computer Information Technology Diploma (94% GPA)",
       "Specialized in data analysis, cloud technologies, and systems development"
@@ -38,7 +38,8 @@ export const timelineItems: TimelineItem[] = [
   },
   {
     year: "2022",
-    title: "Back to School for Computer Science",
+    title:  "Started Computer Science Program at BCIT",
+    website: "https://www.bcit.ca/",
     bulletPoints: [
       "Enrolled in Computer Information Technology program at BCIT",
       "Began specializing in data systems and business technology solutions"
@@ -72,7 +73,7 @@ export const timelineItems: TimelineItem[] = [
   },
   {
     year: "2016",
-    title: "State University of New York at Buffalo",
+    title: "Graduated from State University of New York at Buffalo",
     website: "https://www.buffalo.edu/",
     bulletPoints: [
       "Bachelor of Science in Business Administration",
